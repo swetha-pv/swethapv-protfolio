@@ -24,10 +24,12 @@ const Hero = () => {
               </div>
               
               {/* Inner Profile */}
-              <div className="absolute inset-2 rounded-full bg-gradient-to-br from-purple-100 via-pink-100 to-teal-100 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300">
-                <div className="text-7xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-teal-600 bg-clip-text text-transparent">
-                  S
-                </div>
+              <div className="absolute inset-2 rounded-full bg-gradient-to-br from-purple-100 via-pink-100 to-teal-100 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face" 
+                  alt="P. V. Swetha" 
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
 
               {/* Floating Icons */}
