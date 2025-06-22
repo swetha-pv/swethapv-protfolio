@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GraduationCap, Award, User, ExternalLink } from 'lucide-react';
 
@@ -25,28 +26,32 @@ const About = () => {
 
   const certifications = [
     {
-      name: "Java (NPTEL)",
-      url: "https://nptel.ac.in/courses/106/106/106106183/"
+      name: "Programming in Java – NPTEL",
+      url: "https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs105/Course/NPTEL24CS105S65080112803841627.pdf"
     },
     {
-      name: "Deloitte Simulation",
-      url: "https://www2.deloitte.com/us/en.html"
+      name: "UI/UX for Beginners – Great Learning",
+      url: "https://olympus.mygreatlearning.com/courses/55928/certificate?pb_id=581"
     },
     {
-      name: "Accenture Simulation",
-      url: "https://www.accenture.com/"
+      name: "Accenture – Data Analytics & Visualization",
+      url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/hzmoNKtzvAzXsEqx8_T6kdcdKSTfg2aotxT_afc47gJo9hdcnzyjw_1748088459313_completion_certificate.pdf"
     },
     {
-      name: "AWS Cloud Fundamentals",
-      url: "https://aws.amazon.com/training/"
+      name: "Be 10x - Power BI",
+      url: "https://certx.in/certificate/36a28147-6eed-47a5-8342-e5f926ebba61394232"
     },
     {
-      name: "UI/UX Design Fundamentals",
-      url: "https://www.coursera.org/learn/ui-ux-design"
+      name: "Introduction to Internet Of Things – NPTEL",
+      url: "https://internalapp.nptel.ac.in/NOC/NOC25/SEM1/Ecertificates/106/noc25-cs44/Course/NPTEL25CS44S35080023304343550.pdf"
     },
     {
-      name: "Data Analysis with Python",
-      url: "https://www.python.org/"
+      name: "Excel Certification – OneRoadmap",
+      url: "https://oneroadmap.io/skills/excel/certificate/CERT-4759C39B"
+    },
+    {
+      name: "AWS Cloud Foundations – Credly",
+      url: "https://www.credly.com/badges/dd4e2aa3-4a37-413a-acc2-d682702c10e1/linked_in_profile"
     }
   ];
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, CheckCircle } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
@@ -11,7 +11,8 @@ const Experience = () => {
       location: "Remote",
       description: "Built full-stack applications using Java and Spring Boot, developed REST APIs, and collaborated in Agile development teams.",
       skills: ["Java", "Spring Boot", "REST APIs", "Agile", "Team Collaboration"],
-      color: "from-blue-500 to-purple-600"
+      color: "from-blue-500 to-purple-600",
+      tasks: []
     },
     {
       role: "Data Analyst Intern",
@@ -20,7 +21,18 @@ const Experience = () => {
       location: "Remote",
       description: "Cleaned and analyzed complex datasets, built interactive dashboards, and extracted actionable business insights.",
       skills: ["Data Analysis", "Power BI", "Excel", "Data Visualization", "Business Intelligence"],
-      color: "from-green-500 to-teal-600"
+      color: "from-green-500 to-teal-600",
+      tasks: [
+        "E-commerce SQL Analysis",
+        "Tableau Superstore Analysis", 
+        "Netflix Data Cleaning",
+        "YouTube Trending Analytics",
+        "Simple Sales Dashboard Design",
+        "Sales Summary Analysis",
+        "Exploratory Data Analysis",
+        "Sales Trend Analysis",
+        "Business Insights"
+      ]
     }
   ];
 
@@ -69,6 +81,23 @@ const Experience = () => {
                 <p className="text-gray-700 leading-relaxed mb-6 text-lg">
                   {exp.description}
                 </p>
+
+                {exp.tasks.length > 0 && (
+                  <div className="mb-6">
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                      <CheckCircle className="w-5 h-5 mr-2 text-green-600" />
+                      Key Projects & Tasks
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {exp.tasks.map((task, taskIndex) => (
+                        <div key={taskIndex} className="flex items-center text-gray-600">
+                          <div className="w-2 h-2 bg-gradient-to-r from-green-500 to-teal-600 rounded-full mr-3"></div>
+                          <span className="text-sm">{task}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, skillIndex) => (
