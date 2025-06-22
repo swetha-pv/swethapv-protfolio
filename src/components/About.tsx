@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { GraduationCap, Award, User } from 'lucide-react';
+import { GraduationCap, Award, User, ExternalLink } from 'lucide-react';
 
 const About = () => {
   const education = [
@@ -25,12 +24,30 @@ const About = () => {
   ];
 
   const certifications = [
-    "Java (NPTEL)",
-    "Deloitte Simulation",
-    "Accenture Simulation",
-    "AWS Cloud Fundamentals",
-    "UI/UX Design Fundamentals",
-    "Data Analysis with Python"
+    {
+      name: "Java (NPTEL)",
+      url: "https://nptel.ac.in/courses/106/106/106106183/"
+    },
+    {
+      name: "Deloitte Simulation",
+      url: "https://www2.deloitte.com/us/en.html"
+    },
+    {
+      name: "Accenture Simulation",
+      url: "https://www.accenture.com/"
+    },
+    {
+      name: "AWS Cloud Fundamentals",
+      url: "https://aws.amazon.com/training/"
+    },
+    {
+      name: "UI/UX Design Fundamentals",
+      url: "https://www.coursera.org/learn/ui-ux-design"
+    },
+    {
+      name: "Data Analysis with Python",
+      url: "https://www.python.org/"
+    }
   ];
 
   return (
@@ -63,14 +80,18 @@ const About = () => {
                   <Award className="w-8 h-8 text-teal-600 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-800">Certifications</h3>
                 </div>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 gap-3">
                   {certifications.map((cert, index) => (
-                    <div
+                    <a
                       key={index}
-                      className="bg-white px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow duration-200"
+                      href={cert.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group bg-white px-4 py-3 rounded-lg text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-all duration-200 flex items-center justify-between hover:bg-gradient-to-r hover:from-teal-50 hover:to-blue-50"
                     >
-                      {cert}
-                    </div>
+                      <span>{cert.name}</span>
+                      <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-teal-600 transition-colors duration-200" />
+                    </a>
                   ))}
                 </div>
               </div>
