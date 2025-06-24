@@ -26,7 +26,7 @@ const Hero = () => {
               {/* Inner Profile */}
               <div className="absolute inset-2 rounded-full bg-gradient-to-br from-purple-100 via-pink-100 to-teal-100 flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-300 overflow-hidden">
                 <img 
-                  src="https://freeimghost.net/i/WhatsApp-Image-2025-06-02-at-21.10.54-c4e3c578.xz78ad" 
+                  src="https://github.com/swetha-pv/imageProfile/blob/main/profile.png?raw=true" 
                   alt="P. V. Swetha" 
                   className="w-full h-full object-cover rounded-full"
                 />

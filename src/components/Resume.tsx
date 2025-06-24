@@ -3,8 +3,8 @@ import React from 'react';
 import { Download, Eye, FileText } from 'lucide-react';
 
 const Resume = () => {
-  // Replace with your actual resume URL when ready
-  const resumeUrl = "#";
+  // Your actual resume URL
+  const resumeUrl = "https://github.com/swetha-pv/imageProfile/blob/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf?raw=true";
 
   return (
     <section id="resume" className="py-20 bg-white">
