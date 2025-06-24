@@ -3,10 +3,10 @@ import React from 'react';
 import { Download, Eye, FileText } from 'lucide-react';
 
 const Resume = () => {
-  // URL for viewing online (GitHub blob view)
-  const resumeViewUrl = "https://github.com/swetha-pv/imageProfile/blob/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf";
+  // URL for viewing online (direct PDF view)
+  const resumeViewUrl = "https://github.com/swetha-pv/imageProfile/raw/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf";
   // URL for downloading (GitHub raw)
-  const resumeDownloadUrl = "https://github.com/swetha-pv/imageProfile/blob/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf?raw=true";
+  const resumeDownloadUrl = "https://github.com/swetha-pv/imageProfile/raw/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf";
 
   return (
     <section id="resume" className="py-20 bg-white">
