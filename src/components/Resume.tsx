@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Download, Eye, FileText } from 'lucide-react';
 
 const Resume = () => {
-  // URL for viewing online (direct PDF view)
-  const resumeViewUrl = "https://github.com/swetha-pv/imageProfile/raw/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf";
+  // URL for viewing online (using Google PDF viewer to display inline)
+  const resumeViewUrl = "https://docs.google.com/viewer?url=https://github.com/swetha-pv/imageProfile/raw/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf&embedded=true";
   // URL for downloading (GitHub raw)
   const resumeDownloadUrl = "https://github.com/swetha-pv/imageProfile/raw/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf";
 
