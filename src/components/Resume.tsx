@@ -3,8 +3,10 @@ import React from 'react';
 import { Download, Eye, FileText } from 'lucide-react';
 
 const Resume = () => {
-  // Your actual resume URL
-  const resumeUrl = "https://github.com/swetha-pv/imageProfile/blob/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf?raw=true";
+  // URL for viewing online (GitHub blob view)
+  const resumeViewUrl = "https://github.com/swetha-pv/imageProfile/blob/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf";
+  // URL for downloading (GitHub raw)
+  const resumeDownloadUrl = "https://github.com/swetha-pv/imageProfile/blob/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf?raw=true";
 
   return (
     <section id="resume" className="py-20 bg-white">
@@ -33,7 +35,7 @@ const Resume = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={resumeUrl}
+                href={resumeViewUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200"
@@ -43,7 +45,7 @@ const Resume = () => {
               </a>
               
               <a
-                href={resumeUrl}
+                href={resumeDownloadUrl}
                 download="Swetha_PV_Resume.pdf"
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-teal-600 to-blue-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200"
               >
