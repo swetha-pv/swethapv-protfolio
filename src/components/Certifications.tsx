@@ -31,6 +31,38 @@ const Certifications = () => {
     {
       name: "AWS Cloud Foundations – Credly",
       url: "https://www.credly.com/badges/dd4e2aa3-4a37-413a-acc2-d682702c10e1/linked_in_profile"
+    },
+    {
+      name: "Portfolio Website Workshop – Linta Technologies",
+      url: "#"
+    },
+    {
+      name: "Data Analytics Job Simulation – Deloitte",
+      url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_afc47gJo9hdcnzyjw_1748088458891_completion_certificate.pdf"
+    },
+    {
+      name: "Edunet - SkillsBuild Orientation – IBM",
+      url: "https://skills.yourlearning.ibm.com/certificate/PLAN-04138CD348A7"
+    },
+    {
+      name: "Communicating with Impact – IBM",
+      url: "https://skills.yourlearning.ibm.com/certificate/URL-FFD82E8D28EB"
+    },
+    {
+      name: "Critical Soft Skills for Project Managers – IBM",
+      url: "https://skills.yourlearning.ibm.com/certificate/URL-G-YOH0ZY0C8"
+    },
+    {
+      name: "Project Management Training – IBM",
+      url: "https://skills.yourlearning.ibm.com/certificate/URL-DE8ABB219860"
+    },
+    {
+      name: "Resume Building Guide – IBM",
+      url: "https://skills.yourlearning.ibm.com/certificate/URL-64DEE7D31890"
+    },
+    {
+      name: "Make Your Resume Stand Out – IBM",
+      url: "https://skills.yourlearning.ibm.com/certificate/URL-7C373D3D8649"
     }
   ];
 
