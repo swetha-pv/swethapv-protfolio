@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react';
 import { useForm } from 'react-hook-form';
@@ -38,10 +37,13 @@ const Contact = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      const response = await fetch('/api/send-email', {
+      // Replace with your actual Supabase project URL
+      const supabaseUrl = 'https://your-project-id.supabase.co';
+      const response = await fetch(`${supabaseUrl}/functions/v1/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': 'Bearer your-anon-key', // You'll need to add your anon key
         },
         body: JSON.stringify(data),
       });
@@ -56,6 +58,7 @@ const Contact = () => {
         throw new Error('Failed to send message');
       }
     } catch (error) {
+      console.error('Contact form error:', error);
       toast({
         title: "Failed to send message",
         description: "Please try again or contact me directly via email.",
