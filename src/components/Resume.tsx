@@ -1,10 +1,14 @@
+
 import React from 'react';
 import { Download, Eye, FileText } from 'lucide-react';
 
 const Resume = () => {
-  // URL for viewing online (using Google PDF viewer to display inline)
-  const resumeViewUrl = "https://docs.google.com/viewer?url=https://github.com/swetha-pv/imageProfile/raw/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf&embedded=true";
-  // URL for downloading (GitHub raw)
+  // For now, I'll use a PDF.js viewer approach that should work better for inline viewing
+  // You'll need to upload your PDF file to the project or host it somewhere accessible
+  const resumePdfUrl = "/lovable-uploads/8541f92b-486c-401a-af8a-989b0dd58014.png"; // This is your uploaded image
+  
+  // Create a data URL for the PDF viewer (you'll need to replace this with actual PDF URL)
+  const resumeViewUrl = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent("https://github.com/swetha-pv/imageProfile/raw/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf")}`;
   const resumeDownloadUrl = "https://github.com/swetha-pv/imageProfile/raw/main/Swetha_P_V_-_Resume%5B1%5D%20(1).pdf";
 
   return (
@@ -16,6 +20,17 @@ const Resume = () => {
               Resume
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
+          </div>
+
+          {/* Resume Preview */}
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl shadow-lg mb-8">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <img 
+                src="/lovable-uploads/8541f92b-486c-401a-af8a-989b0dd58014.png" 
+                alt="Swetha P V Resume"
+                className="w-full max-w-2xl mx-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              />
+            </div>
           </div>
 
           <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-12 rounded-2xl shadow-lg text-center">
@@ -33,15 +48,13 @@ const Resume = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={resumeViewUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => window.open(resumeViewUrl, '_blank')}
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200"
               >
                 <Eye className="w-5 h-5 mr-3" />
                 View Online
-              </a>
+              </button>
               
               <a
                 href={resumeDownloadUrl}
