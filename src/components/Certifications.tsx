@@ -1,9 +1,16 @@
-
 import React from 'react';
 import { Award, ExternalLink } from 'lucide-react';
 
 const Certifications = () => {
   const certifications = [
+    {
+      name: "Data Analyst Internship – Elevate Labs (Best Performer)",
+      url: "https://flowto.it/exszJ4kWTq"
+    },
+    {
+      name: "Full Stack Java Internship – SkillDzire",
+      url: "https://certificates.skilldzire.com/generate_certificate.php?id=19663"
+    },
     {
       name: "Programming in Java – NPTEL",
       url: "https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs105/Course/NPTEL24CS105S65080112803841627.pdf"
